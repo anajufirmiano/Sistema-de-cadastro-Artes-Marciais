@@ -1,24 +1,38 @@
-# Sistema de Cadastramento de Alunos de Artes Marciais
-Um script interativo em Python via terminal desenvolvido para gerenciar o processo de matrícula, seleção de modalidades/faixas, compra de vestuário e checkout de pagamentos para uma academia de artes marciais.
+# 🥋 Sistema de Cadastramento de Alunos - Artes Marciais
 
-📌 Funcionalidades
-Cadastro Inteligente: Captura dados cadastrais do aluno e calcula a idade exata com base na data de nascimento.
+Sistema em Python desenvolvido via terminal (CLI) para gerenciamento de matriculas em academias de artes marciais. O programa realiza o cadastro de dados pessoais, validação de regras de idade e responsáveis, seleção de modalidades/graduações, venda opcional de equipamentos e processamento de pagamento.
 
-Validação de Menores: Solicita dados do responsável legal caso o aluno seja menor de 18 anos (com opção de incluir até 2 responsáveis).
+---
 
-Validação de Dados: Loop de validação para Telefone (11 dígitos), CEP (8 dígitos), Cartão de Crédito (16 dígitos) e CVV (3 dígitos).
+## 📌 Funcionalidades
 
-Gestão de Modalidades: Suporte a Jiu-Jitsu, Luta Livre Esportiva e Muay-Thai, ajustando dinamicamente o menu de faixas/tarjas conforme a idade do aluno.
+- **Coleta e Validação de Dados:**
+  - Cálculo exato da idade a partir da data de nascimento.
+  - Tratamento diferenciado para menores de idade (cadastro de até 2 responsáveis e grau de parentesco).
+  - Validação de dados (Telefone com 11 dígitos, CEP com 8 dígitos).
 
-Venda de Equipamentos: Opção de compra de trajes para iniciantes (Kimono, Faixa, Resguarde, Short, Tarja) com cálculo de valor final em tempo real.
+- **Gestão de Modalidades e Graduações:**
+  - Suporte a 3 modalidades: **Jiu-Jitsu**, **Luta Livre Esportiva** e **Muay-Thai**.
+  - Exibição de faixas/tarjas específicas ajustadas pela faixa etária (Infantil até 15 anos / Adulto a partir de 16 anos).
 
-Módulo de Pagamento: Suporte a PIX e Cartão (Débito e Crédito parcelado em até 3x).
+- **Venda de Equipamentos:**
+  - Sugestão e cálculo de trajes/equipamentos para alunos iniciantes (faixa/tarja branca).
+  - Seleção de tamanhos e cores para itens como Kimono, Faixa, Resguarde, Short e Tarja.
 
-🛠️ Tecnologias e Bibliotecas
-Python 3.x
+- **Processamento de Pagamento:**
+  - Suporte a **PIX** e **Cartão** (Débito/Crédito).
+  - Validação de dados do cartão (16 dígitos e CVV de 3 dígitos).
+  - Opção de parcelamento no crédito (em até 3x).
 
-datetime (Nativa) - Manipulação e cálculo de datas.
+---
 
-time (Nativa) - Controle de pausas (sleep) na interface do terminal.
+## 🚀 Pré-requisitos
 
-emoji (Externa) - Exibição de emojis no final do atendimento.
+Para executar o projeto, você precisará ter o **Python 3.x** instalado em sua máquina e a biblioteca externa `emoji`.
+
+### Instalação das dependências
+
+Instale a biblioteca `emoji` executando o comando no terminal:
+
+```bash
+pip install emoji
